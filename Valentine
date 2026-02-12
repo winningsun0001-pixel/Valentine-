@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Be My Valentine?</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      margin-top: 100px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    #noBtn {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Will you be my Valentine? ❤️</h1>
+
+  <button onclick="yesClicked()">Yes</button>
+  <button id="noBtn" onmouseover="moveButton()">No</button>
+
+  <script>
+    function yesClicked() {
+      alert("Are you sure? 🥺");
+      alert("Like really sure?");
+      alert("Okay fine. I love you too 😌❤️");
+    }
+
+    function moveButton() {
+      const btn = document.getElementById("noBtn");
+      btn.style.top = Math.random() * window.innerHeight + "px";
+      btn.style.left = Math.random() * window.innerWidth + "px";
+    }
+  </script>
+
+</body>
+</html>
